@@ -382,23 +382,4 @@ def create_fr_groups(
     return path_ranking_list, name_ranking_list
 
 
-def calculate_metric(
-        pred: list,
-        gt: list,
-        func: str="consistency",
-    ):
-    
-    pred = np.array(pred).reshape(-1)
-    gt =  np.array(gt).reshape(-1)
-
-    if func == "consistency":
-        unequal_count = sum(1 for x, y in zip(pred, gt) if x != y)
-        ret = 1 - unequal_count / len(gt)
-    elif func == "ranking":
-        srcc = calculate_srcc(pred, gt)
-        plcc = calculate_plcc(pred, gt)
-        ret = (srcc, plcc)
-    return ret
-
-
 

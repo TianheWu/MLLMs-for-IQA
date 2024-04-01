@@ -68,7 +68,7 @@ class GPT4VTester():
             self.dataset_name, self.iqa_type, self.psy_pattern + "-" + self.nlp_pattern)
         
         self.define_dataset()
-    
+
     def define_dataset(self,):
         self.image_path_list, self.image_name_list, self.mos_list = parse_sampled_datasets(
             dataset_name=self.dataset_name,
@@ -79,6 +79,20 @@ class GPT4VTester():
 
         print("Image num {}".format(len(self.image_path_list)))
         print("score num {}".format(len(self.mos_list)))
+    
+    def testing_gpt4v(self, ):
+        if self.psy_pattern == "single" and self.iqa_type == "NR":
+            self.test_nr_single_stimulus()
+        elif self.psy_pattern == "double" and self.iqa_type == "NR":
+            self.test_nr_double_stimulus()
+        elif self.psy_pattern == "multiple" and self.iqa_type == "NR":
+            self.test_nr_multiple_stimulus()
+        elif self.psy_pattern == "single" and self.iqa_type == "FR":
+            self.test_fr_single_stimulus()
+        elif self.psy_pattern == "double" and self.iqa_type == "FR":
+            self.test_fr_double_stimulus()
+        elif self.psy_pattern == "multiple" and self.iqa_type == "FR":
+            self.test_fr_multiple_stimulus()
     
     def test_nr_single_stimulus(self, ):
         gpt4v_single_nr_batch(
@@ -177,7 +191,7 @@ if __name__ == "__main__":
     Tester = GPT4VTester(
         nr_image_pair_num=5, nr_image_group_num=2, fr_image_pair_num=5, fr_image_group_num=2,
     )
-    Tester.test_fr_double()
+    Tester.testing_gpt4v()
 
 
 
