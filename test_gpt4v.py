@@ -5,10 +5,8 @@ from iqa_models.gpt4v import gpt4v_single_nr_batch
 from iqa_models.gpt4v import gpt4v_single_fr_batch
 from iqa_models.gpt4v import gpt4v_double_fr_batch
 from iqa_models.gpt4v import gpt4v_multiple_fr_batch
-from iqa_models.gpt4v import gpt4v_double_cd_batch
 from iqa_models.gpt4v import gpt4v_double_nr_batch
 from iqa_models.gpt4v import gpt4v_multiple_nr_batch
-from iqa_models.gpt4v import gpt4v_multiple_cd_batch
 
 from prompts.gpt4v_prompt import get_prompt
 from data.helpers_sample import parse_sampled_datasets
