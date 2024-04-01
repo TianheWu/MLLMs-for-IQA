@@ -1,0 +1,27 @@
+# FR_KADID, AUG_KADID, TQD, SPCD, NR_KADID, SPAQ, AGIQA3K
+DATASET_NAME:
+  FR_KADID
+
+# GPT-4V api-key
+KEY:
+  
+
+# single, double, multiple
+PSYCHOPHYSICAL_PATTERN:
+  single
+
+# standard, cot (chain-of-thought), ic (in-context)
+NLP_PATTERN:
+  standard
+
+# distorted image dataset path
+DIS_DATA_PATH:
+  C:/wutianhe/sigs/research/IQA_dataset/kadid10k/images
+
+# reference image dataset path
+REF_DATA_PATH:
+  C:/wutianhe/sigs/research/IQA_dataset/kadid10k/images
+
+# IC path
+IC_PATH:
+  []
