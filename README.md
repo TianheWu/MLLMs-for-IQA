@@ -80,7 +80,7 @@ IC_PATH:
   []
 ```
 
-Inference with simple command.
+**Inference with simple command**.
 ```
 python test_gpt4v.py
 ```
