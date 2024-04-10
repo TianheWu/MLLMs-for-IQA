@@ -25,6 +25,25 @@
 </p>
 </div>
 
+
+> *While Multimodal Large Language Models (MLLMs) have experienced significant advancement on visual understanding and reasoning, their potentials to serve as powerful, flexible, interpretable, and text-driven models for Image Quality Assessment (IQA) remains largely unexplored. In this paper, we conduct a comprehensive and systematic study of prompting MLLMs for IQA. Specifically, we first investigate nine prompting systems for MLLMs as the combinations of three standardized testing procedures in psychophysics (i.e., the single-stimulus, double-stimulus, and multiple-stimulus methods) and three popular prompting strategies in natural language processing (i.e., the standard, in-context, and chain-of-thought prompting). We then present a difficult sample selection procedure, taking into account sample diversity and uncertainty, to further challenge MLLMs equipped with the respective optimal prompting systems. We assess three open-source and one close-source MLLMs on several visual attributes of image quality (e.g., structural and textural distortions, color differences, and geometric transformations) in both full-reference and no-reference scenarios. Experimental results show that only the close-source GPT-4V provides a reasonable account for human perception of image quality, but is weak at discriminating fine-grained quality variations (e.g., color differences) and at comparing visual quality of multiple images, tasks humans can perform effortlessly.* 
+
+
+## 🔧 Dataset Preparation
+We assess three open-source and one close-source MLLMs on several visual attributes of image quality (e.g., structural and textural distortions, color differences, and geometric transformations) in both full-reference and no-reference scenarios.
+
+**Full-reference scenario**:
+- Structural and textural distortions (synthetic distortion): [FR-KADID](https://database.mmsp-kn.de/kadid-10k-database.html)
+- Geometric transformations: [Aug-KADID](https://drive.google.com/file/d/1F1E5Iibn5qKt58HAxQ_600ypDVSvd6sl/view?usp=drive_link)
+- Texture similarity: [TQD](https://drive.google.com/file/d/1F1E5Iibn5qKt58HAxQ_600ypDVSvd6sl/view?usp=drive_link)
+- Color difference: [SPCD](https://github.com/hellooks/CDNet)
+
+**No-reference scenario**:
+- Structural and textural distortions (synthetic distortion): [NR-KADID](https://database.mmsp-kn.de/kadid-10k-database.html)
+- Structural and textural distortions (authentic distortion): [SPAQ](https://github.com/h4nwei/SPAQ)
+- Structural and textural distortions (algorithm-based distortion): [AGIQA-3K](https://github.com/lcysyzxdxc/AGIQA-3k-Database)
+
+
 ## :hammer_and_wrench: Quick Inference
 Before inference with MLLMs, please modify `settings.yaml`.
 ```
