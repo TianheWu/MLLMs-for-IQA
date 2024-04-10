@@ -20,6 +20,10 @@
   <sup>4</sup>The Hong Kong Polytechnic University
 </div>
 
+<div>
+  <a href="https://arxiv.org/abs/2403.10854" target="_blank">Preprint Paper</a>
+</div>
+
 <p align="center">
     <img src="images/teaser.png" width="700">
 </p>
@@ -45,7 +49,54 @@ We assess three open-source and one close-source MLLMs on several visual attribu
 
 
 ## :hammer_and_wrench: Quick Inference
-Before inference with MLLMs, please modify `settings.yaml`.
+Before inference with MLLMs, please modify `settings.yaml`. Here is an example.
+```
+# FR_KADID, AUG_KADID, TQD, SPCD, NR_KADID, SPAQ, AGIQA3K
+DATASET_NAME:
+  FR_KADID
+
+# GPT-4V api-key
+KEY:
+  You need to input your GPT-4V API key
+
+# single, double, multiple
+PSYCHOPHYSICAL_PATTERN:
+  single
+
+# standard, cot (chain-of-thought), ic (in-context)
+NLP_PATTERN:
+  standard
+
+# distorted image dataset path
+DIS_DATA_PATH:
+  C:/wutianhe/sigs/research/IQA_dataset/kadid10k/images
+
+# reference image dataset path
+REF_DATA_PATH:
+  C:/wutianhe/sigs/research/IQA_dataset/kadid10k/images
+
+# IC path (image paths)
+IC_PATH:
+  []
+```
+
+Inference with simple command.
 ```
 python test_gpt4v.py
 ```
+
+## BibTeX
+```
+@article{wu2024comprehensive,
+  title={A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment},
+  author={Wu, Tianhe and Ma, Kede and Liang, Jie and Yang, Yujiu and Zhang, Lei},
+  journal={arXiv preprint arXiv:2403.10854},
+  year={2024}
+}
+```
+
+## 📧 Contact
+If you have any question, please email `wth22@mails.tsinghua.edu.cn`.
+
+
+
