@@ -288,6 +288,49 @@ def scale_values_for_fr(input_list: list, scale_num: int=100):
     return input_list
 
 
+def scale_values_for_fr_sample(input_list: list, scale_num: int=1):
+    score_list = [sublist[2] for sublist in input_list]
+    min_val = min(score_list)
+    max_val = max(score_list)
+    for i in range(len(input_list)):
+        input_list[i][2] = (input_list[i][2] - min_val) / (max_val - min_val) * scale_num
+    
+    try:
+        std_list = [sublist[3] for sublist in input_list]
+        min_val = min(std_list)
+        max_val = max(std_list)
+
+        for i in range(len(input_list)):
+            input_list[i][3] = (input_list[i][3] - min_val) / (max_val - min_val) * scale_num
+        
+        print("scaling the std value done.")
+    except:
+        pass
+    
+    return input_list
+
+
+def scale_values_for_nr_sample(dictionary: dict, scale_num: int=100):
+    score_list = [value[0] for value in dictionary.values()]
+    min_val = min(score_list)
+    max_val = max(score_list)
+    for key in dictionary:
+        dictionary[key][0] = (dictionary[key][0] - min_val) / (max_val - min_val) * scale_num
+    
+    try:
+        std_list = [value[1] for value in dictionary.values()]
+        min_val = min(std_list)
+        max_val = max(std_list)
+        for key in dictionary:
+            dictionary[key][1] = (dictionary[key][1] - min_val) / (max_val - min_val) * scale_num
+        
+        print("scaling the std value done.")
+    except:
+        pass
+
+    return dictionary
+
+
 def creat_fr_pairs(
         image_path_list,
         image_name_list,
