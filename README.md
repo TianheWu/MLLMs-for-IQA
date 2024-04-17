@@ -47,11 +47,17 @@ We assess three open-source and one close-source MLLMs on several visual attribu
 - Structural and textural distortions (authentic distortion): [SPAQ](https://github.com/h4nwei/SPAQ)
 - Structural and textural distortions (algorithm-based distortion): [AGIQA-3K](https://github.com/lcysyzxdxc/AGIQA-3k-Database)
 
+## 💫 Sample Selection
+To execute computational sample selection method for selecting difficult data, implement below command.
+```
+python sample_selection.py
+```
+
 
 ## :hammer_and_wrench: Quick Inference
 Before inference with MLLMs, please modify `settings.yaml`. Here is an example.
 ```
-# FR_KADID, AUG_KADID, TQD, SPCD, NR_KADID, SPAQ, AGIQA3K
+# FR_KADID, AUG_KADID, TQD, NR_KADID, SPAQ, AGIQA3K
 DATASET_NAME:
   FR_KADID
 
