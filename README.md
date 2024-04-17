@@ -48,7 +48,7 @@ We assess three open-source and one close-source MLLMs on several visual attribu
 - Structural and textural distortions (algorithm-based distortion): [AGIQA-3K](https://github.com/lcysyzxdxc/AGIQA-3k-Database)
 
 ## 💫 Sample Selection
-To execute computational sample selection method for selecting difficult data, implement below command.
+To execute computational sample selection method for selecting difficult data, implement with below command.
 ```
 python sample_selection.py
 ```
