@@ -101,6 +101,9 @@ python test_gpt4v.py
 }
 ```
 
+## Personal Acknowledgement
+I would like to thank my two friends [Xinzhe Ni]() and [Yifan Wang]() in our Tsinghua 1919 group for providing valuable NLP and MLLM knowledge in my personal difficult period.
+
 ## 📧 Contact
 If you have any question, please email `wth22@mails.tsinghua.edu.cn`.
 
