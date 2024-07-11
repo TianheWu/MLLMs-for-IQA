@@ -14,14 +14,14 @@
 </div>
 
 <div>
-  <sup>1</sup>Shenzhen International Graduate School, Tsinghua University<br>
+  <sup>1</sup>Tsinghua University<br>
   <sup>2</sup>Department of Computer Science, City University of Hong Kong<br>
   <sup>3</sup>OPPO Research Institute<br>
-  <sup>4</sup>The Hong Kong Polytechnic University
+  <sup>4</sup>Department of Computing, The Hong Kong Polytechnic University
 </div>
 
 <div>
-  <a href="https://arxiv.org/abs/2403.10854" target="_blank">Preprint Paper</a>
+  <a href="https://arxiv.org/abs/2403.10854v2" target="_blank">Paper</a>
 </div>
 
 <p align="center">
