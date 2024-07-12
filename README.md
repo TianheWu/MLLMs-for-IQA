@@ -96,7 +96,7 @@ python test_gpt4v.py
 @article{wu2024comprehensive,
   title={A Comprehensive Study of Multimodal Large Language Models for Image Quality Assessment},
   author={Wu, Tianhe and Ma, Kede and Liang, Jie and Yang, Yujiu and Zhang, Lei},
-  journal={arXiv preprint arXiv:2403.10854v2},
+  journal={arXiv preprint arXiv:2403.10854v3},
   year={2024}
 }
 ```
