@@ -8,7 +8,7 @@
 <div>
   <a href="https://scholar.google.com/citations?user=QW1JtysAAAAJ&hl=en&oi=ao" target="_blank">Tianhe Wu</a><sup>1,2</sup>,
   <a href="https://scholar.google.com/citations?user=sfzOyFoAAAAJ&hl=en&oi=ao" target="_blank">Kede Ma</a><sup>2*</sup>,
-  <a target="_blank">Jie Liang</a><sup>3</sup>,
+  <a href="https://scholar.google.com/citations?user=REWxLZsAAAAJ&hl=en" target="_blank">Jie Liang</a><sup>3</sup>,
   <a href="https://scholar.google.com/citations?user=4gH3sxsAAAAJ&hl=en&oi=ao" target="_blank">Yujiu Yang</a><sup>1*</sup>,
   <a href="https://scholar.google.com/citations?user=tAK5l1IAAAAJ&hl=en&oi=ao" target="_blank">Lei Zhang</a><sup>3,4</sup>
 </div>
